@@ -230,47 +230,6 @@ h2, h3 {
     cursor: pointer;
 }
 
-#lightbox {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.574);
-    display: none;
-}
-
-#lightbox.active {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-#lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    padding: 5px;
-    background-color: white;
-}
-
-.summary {
-    display: none;
-}
-
-button {
-    display: block;
-    margin: auto;
-    width: 10rem;
-    height: 2rem;
-}
-  
-:modal {
-    background-color: beige;
-    border: 2px solid burlywood;
-    border-radius: 5px;
-}
-
 /* CONTACT PAGE */
 .form-label-contact {
     font-family: 'Cormorant Garamond', serif;
