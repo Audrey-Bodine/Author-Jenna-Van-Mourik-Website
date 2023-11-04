@@ -12,7 +12,7 @@
 
 /* HOME PAGE */
 .bg-hero-image {
-    background: rgba(0, 0, 0, 0.3) url('../Images/Bible\ Flatlay.jpeg');
+    background: rgba(0, 0, 0, 0.3) url('./Images/Bible\ Flatlay.jpeg');
     background-blend-mode: darken;
     overflow: hidden;
     background-position: center;
