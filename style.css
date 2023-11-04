@@ -255,10 +255,34 @@ h2, h3 {
 }
 
 
+/* Scripture journals grid */
+.cover-grid-scripture {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+}
+
+.cover-grid-scripture img:hover {
+    transition: .25s;
+    box-shadow: 5px 3px 12px 0px rgba(0, 0, 0, 0.313);
+    transform: scale(1.01);
+    object-fit: cover;
+}
+
+.cover-grid-scripture img {
+    width: 100%;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.146);
+    border-radius: 2px;
+    cursor: pointer;
+}
 
 
 
 /* Fiction modal */
+.fiction-bg-fill {
+    /* background-color: #B4BFB0; */
+}
 .modal-title {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
@@ -277,7 +301,7 @@ h2, h3 {
 }
 
 .modal-text p {
-    color: #6d4b4b;
+    color: #373a3c;
     font-size: 1.2rem;
 }
 
@@ -285,6 +309,12 @@ h2, h3 {
     width: 100%;
     object-fit: cover;
     padding: 1rem;
+}
+
+.antioch-text .heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: rgb(152, 150, 143);
 }
 
 #jd-modal-header, #jd-modal-footer {
@@ -295,18 +325,80 @@ h2, h3 {
     background-color: #760a0a !important;
 }
 
+/* Upcoming release modal */
+#upcoming-release .genre-header {
+    color: rgb(0, 0, 0);
+    background-color: #e0d4ec;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+.modal-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.modal-body {
+    background-color: rgb(244, 240, 236);
+}
+
+#daughter-text {
+    padding: 1rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+}
+
+#daughter-text .heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: rgb(152, 150, 143);
+}
+
+.modal-text p {
+    color: #6d4b4b;
+    font-size: 1.2rem;
+}
+
+#daughter-image {
+    z-index: 5;
+    width: 90%;
+    object-fit: cover;
+}
+
+.bg-image {
+    /* background-color: #B07249; */
+    background-image: url('./Images/Daughter-bg.jpeg');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.bg-overlay {
+    backdrop-filter: blur(10px);
+    background-color: rgba(72, 70, 74, 0.552);
+}
+
+#daughter-modal-header, #daughter-modal-footer {
+    background-color: #613191 !important;
+}
 
 /* Reading journal modal */
+.rj-bg-fill {
+    /* background: #ecefeb; */
+}
+
 .modal-title-rj {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: 1.5rem;
-    color: black;
+    color: rgb(73, 59, 79);
 }
 
 #rj-title {
     font-family: 'Cormorant Garamond', serif;
-    color: #8f8275;
+    font-weight: 400;
+    color: rgb(147, 170, 147);
     
 }
 
@@ -343,13 +435,105 @@ h2, h3 {
     padding: 1rem;
 }
 
-#jd-modal-header, #jd-modal-footer {
-    background-color: #2b3826 !important;
+#reading-modal-header, #reading-modal-footer {
+    background: linear-gradient(0.25turn, rgb(224, 170, 165), rgb(243, 226, 100), rgb(173, 200, 173), rgb(150, 198, 203), rgb(202, 171, 216)) !important;
 }
 
-#ad-modal-header, #ad-modal-footer {
-    background-color: #760a0a !important;
+
+/* Scripture journal modal */
+.sj-bg-fill {
+    background: #ecefeb;
 }
+.modal-title-sj {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+#sj-subheader {
+    font-family: 'Cormorant Garamond', serif;
+    color: #2b3826;
+    font-size: 1.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.sj-text {
+    color: #54483b;
+}
+
+.modal-body-sj {
+    background-color: rgb(249, 250, 249);
+}
+
+.modal-text {
+    padding: 2rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+}
+
+.modal-text p {
+    color: #6d4b4b;
+    font-size: 1.2rem;
+}
+
+.modal-image img {
+    width: 100%;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+#scripture-modal-header, #scripture-modal-footer {
+    background-color: #020202d0 !important;
+}
+
+/* Prayer journal modal */
+.modal-title-pj {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+#pj-subheader {
+    font-family: 'Cormorant Garamond', serif;
+    color: #2b3826;
+    font-size: 1.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.pj-text {
+    color: #54483b;
+}
+
+.modal-body-pj {
+    background-color: rgb(249, 250, 249);
+}
+
+.modal-text {
+    padding: 2rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+}
+
+.modal-text p {
+    color: #6d4b4b;
+    font-size: 1.2rem;
+}
+
+.modal-image img {
+    width: 100%;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+#prayer-modal-header, #prayer-modal-footer {
+    background-color: #020202d0 !important;
+}
+
+
 
 
 /* CONTACT PAGE */
