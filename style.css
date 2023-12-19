@@ -141,21 +141,21 @@ h2, h3 {
 }
 
 .blog-title {
-    color: white;
+    color: #e0dcd7;
 }
 
 .blog-header {
     /* color: #432d17; */
-    color: #563514;
+    color: #4b2c0d;
 }
 
 .blog-body {
-    color: #61492b;
+    color: #5b380e;
     /* color: #503a21; */
 }
 
 .blog-subtitle {
-    color: #644d31;
+    color: #5d472d;
 }
 
 
